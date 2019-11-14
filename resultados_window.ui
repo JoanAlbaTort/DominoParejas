@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>resultados_window</class>
+ <widget class="QMainWindow" name="resultados_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>resultados_window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Partida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Mesa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Pareja Primera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>50</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Pareja Segunda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Puntos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>90</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Puntos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Diferencia&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>140</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Diferencia&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_new_res">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>160</y>
+      <width>461</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Guardar Resultado</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="npart">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nmesa">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pareja_1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 16pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pareja_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>50</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 16pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pp1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pp2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>90</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dp1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dp2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>130</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_elimina">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>700</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Elimina Resultado</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;Mesas Jugando&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="mjugando">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>10</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tabla_resultados">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>971</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::ExtendedSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount">
+     <number>100</number>
+    </property>
+    <property name="columnCount">
+     <number>9</number>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Grupo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PG</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Puntos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NPareja</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Pareja</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Resultado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Partida</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Mesa</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="ganada1">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ganada2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>120</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>130</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Ganada&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>130</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Ganada&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leer_mesa">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Leer Mesa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_calcula">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Calcula</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_nuevap">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>700</y>
+      <width>511</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Nueva Partida</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>950</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Grupo</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PG</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Puntos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Pareja</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Partida</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Mesa</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Resultado</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
