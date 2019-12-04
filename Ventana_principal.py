@@ -20,29 +20,22 @@ class VentanaPrincipal(QMainWindow):
         self.resultados.clicked.connect(self.abrir_v_resultados)
         self.ver_mesas.clicked.connect(self.abrir_v_ver_mesas)
         self.ver_ranking.clicked.connect(self.abrir_v_ranking)
-
     def abrir_v_settings(self):
-
         self.otraventana=Campeonato()
         self.otraventana.show()
-
     def abrir_v_parejas(self):
-
         self.otraventava=Incripcion_parejas()
         self.otraventava.show() 
-
     
     def abrir_v_resultados(self):
         self.otraventava=Resultados_partidas()
         self.otraventava.show() 
-
     
     
     def abrir_v_ver_mesas(self):
     
         self.otraventava=Asignacion_mesas()
         self.otraventava.show()
-
     def abrir_v_ranking(self):
     
         self.otraventava=clasificacion()
